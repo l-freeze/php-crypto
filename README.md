@@ -51,4 +51,13 @@ $decrypted = Crypto::decrypt($encrypted, $key, $iv);
 print_r($decrypted);
 ```
 
-other: https://github.com/l-freeze/php-crypto/blob/master/example.php
+```
+php index.php
+```
+or
+```
+docker run --rm -u "$(id -u):$(id -g)" -it --tty -w /home -v ${PWD}:/home php:8.2-cli php index.php
+```
+
+# Other
+https://github.com/l-freeze/php-crypto/blob/master/example.php
